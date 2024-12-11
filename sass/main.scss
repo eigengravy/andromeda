@@ -7,15 +7,25 @@
 @import "parts/misc.scss";
 @import "parts/table.scss";
 @import "parts/tags.scss";
+@import "parts/_pubs.scss";
 
 :root {
   /* Used for: block comment, hr, ... */
   --border-color: var(--border-color);
 
   /* Fonts */
-  --text-font: 'Jetbrains Mono';
-  --header-font: 'Space Grotesk', 'Helvetica', sans-serif;
-  --code-font: 'Jetbrains Mono';
+  // --text-font: 'Jetbrains Mono';
+  // --header-font: 'Space Grotesk', 'Helvetica', sans-serif;
+  // --code-font: 'Jetbrains Mono';
+  --text-font:  Optima, Candara, 'Noto Sans', source-sans-pro, "sans-serif";
+  --header-font:  Optima, Candara, 'Noto Sans', source-sans-pro, "sans-serif";
+  --code-font:  Optima, Candara, 'Noto Sans', source-sans-pro, "sans-serif";
+
+  // --header-font:  "Inter";
+
+  // --serif-font: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  // --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  
 }
 
 html {
@@ -35,6 +45,10 @@ html {
 @media all and (min-width:640px) {
   html {
     font-size: 16.5px;
+  }
+  .avatar {
+    float: right;
+    margin-left: 40px;
   }
 }
 

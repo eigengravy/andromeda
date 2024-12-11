@@ -98,6 +98,14 @@
             {%- if section.title %}
             {{post_macros::page_header(title=section.title)}}
             {% endif -%}
+            {%- if section.extra.avatar %}
+                <div class="avatar">
+                    <img src="{{ section.extra.avatar | safe }}"></img>
+                    {%- if section.extra.avatar_caption %}
+                    <span style="font-size: 0.75rem; margin: auto; color: #999;">{{section.extra.avatar_caption}}</span>
+                    {% endif -%}
+                </div>
+            {% endif -%}
             {{ section.content | safe }}
         </section>
     </article>

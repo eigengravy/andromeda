@@ -40,9 +40,10 @@ blockquote {
 }
 
 a {
-  border-bottom: 3px solid var(--primary-color);
-  color: inherit;
+  // border-bottom: 3px solid var(--primary-color);
+  // color: inherit;
   text-decoration: none;
+  color: var(--primary-color);
 
   // Make sure the underline is at the top
   position: relative; // needed for z-index
@@ -57,6 +58,7 @@ a:hover {
   background-color: var(--primary-color);
   color: var(--hover-color);
 }
+
 
 time {
   color: grey;
@@ -113,6 +115,22 @@ del {
       }
     }
   }
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.avatar > img {
+  width: 15rem;
+  height: 15rem;
+  border: none;
+  // border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 /* Remove styling from theme toggle button */

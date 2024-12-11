@@ -1,4 +1,6 @@
 {% import "macros/macros.html" as post_macros %}
+{% import "macros/pub_icons.html" as icons %}
+{% import "macros/citation.html" as citation %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,6 +27,8 @@
         <div class="giscus"></div>
         {% include "_giscus_script.html" %}
         {% endif %}
+
+        {% include "partials/footer.html" %}
     </div>
 </body>
 
