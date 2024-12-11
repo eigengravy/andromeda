@@ -1,8 +1,8 @@
-name = "apollo"
+name = "andromeda"
 description = "Modern and minimalistic blog theme"
 min_version = "0.14.0"
 license = "MIT"
-homepage = "https://github.com/not-matthias/apollo"
+homepage = "https://github.com/eigengravy/andromeda"
 demo = "https://not-matthias.github.io/apollo"
 
 # Any variable there can be overridden in the end user `config.toml`
@@ -12,5 +12,5 @@ demo = "https://not-matthias.github.io/apollo"
 [extra]
 
 [author]
-name = "not-matthias"
-homepage = "https://github.com/not-matthias"
+name = "eigengravy"
+homepage = "https://github.com/eigengravy"
