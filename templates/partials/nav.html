@@ -1,7 +1,12 @@
 <header>
     <div class="main">
-        <a href={{ config.base_url }}>{{ config.title }}</a>
-
+        <div>
+            <a href={{ config.base_url }}>{{ config.title }}</a>
+            {%- if config.extra.subtitle %}
+            <p style="font-size: small; margin-top: 0;">{{ config.extra.subtitle }}</p>
+            {% endif -%}
+        </div>
+        
         <div class="socials">
             {% for social in config.extra.socials | default(value=[]) %}
             <a rel="me" href="{{ social.url }}" class="social">
