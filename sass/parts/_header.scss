@@ -88,6 +88,13 @@ header .socials {
     }
 }
 
+@media all and (min-width: 640px) {
+    header {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
 .meta {
     color: #999;
     display: flexbox;

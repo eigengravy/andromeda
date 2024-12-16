@@ -33,3 +33,30 @@ figure h4::before {
 svg {
   max-height: 15px;
 }
+
+@media all and (min-width: 640px) {
+  // .image {
+  //   float: left;
+  //   margin-right: 40px;
+  // }
+
+  .image {
+    float: right;
+    margin-left: 40px;
+  }
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image > img {
+  width: 12rem;
+  height: 12rem;
+  border: none;
+  overflow: hidden;
+  object-fit: cover;
+}

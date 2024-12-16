@@ -1,0 +1,28 @@
+<div class="news-container">
+  {% if clickable | default(value=false) %}
+  <button class="note-toggle">
+    {% if center | default(value=false) %}
+    <div class="news-center">{{ header | markdown | safe }}</div>
+    {% else %}
+    <div class="news-icon">{{ header | markdown | safe }}</div>
+    {% endif %}
+  </button>
+
+  {% if hidden | default(value=false) %}
+  <div class="news-content" style="display: none">
+    {% else %}
+    <div class="news-content" style="display: block">
+      {% endif %} {{ body | markdown | safe }}
+    </div>
+    {% else %}
+    <div class="news-header">
+      {% if center | default(value=false) %}
+      <div class="news-center">{{ header | markdown | safe }}</div>
+      {% else %}
+      <div class="news-icon">{{ header | markdown | safe }}</div>
+      {% endif %}
+    </div>
+    <div class="news-content">{{ body | markdown | safe }}</div>
+    {% endif %}
+  </div>
+</div>
