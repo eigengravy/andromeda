@@ -7,6 +7,8 @@
     <ul class="publist">
       {% for page in publications %}
       <li class="publist-item">
+        <a href="{{ page.permalink | safe }}"> {{ page.title }}</a> 
+        <br />
         {% for author in page.taxonomies.authors %} {% if not loop.last %} {% if
         author == config.extra.author %}
         <strong
@@ -35,8 +37,8 @@
           class="pub-author"
           >{{ author }}</a
         >
-        {% endif %} {% endif %} {% endfor %} (<time>{{ year }}</time>) -
-        <a href="{{ page.permalink | safe }}"> {{ page.title }}</a> -
+        {% endif %} {% endif %} {% endfor %} 
+        <br />
         <span style="font-style: italic;">{{page.extra.publication}}</span>
         <ul class="publist-links">
           {% for link in page.extra.links %} {% if link.url is
